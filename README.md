@@ -20,10 +20,10 @@ for the robbery by calculating exactly which path you should take to get through
 the room with the lowest chance of triggering the alarm, and steal the diamond.
 
 Given parameters:
-- The room is of size M x N, with M and N given parameters.
-- The diamond is located at the center of the room, (M/2, N/2).
-- The entrance is at the bottom right corner, (M, 0), and the exit at the top
-  left corner, (0, N).
+- The room is of size `M` x `N`, with `M` and `N` given parameters.
+- The diamond is located at the center of the room, `(M/2, N/2)`.
+- The entrance is at the bottom right corner, `(M, 0)`, and the exit at the top
+  left corner, `(0, N)`.
 - You have a list of sensor locations `(m_i, n_i)`.
 
 Your algorithm should give the probability of being caught taking the ideal path
