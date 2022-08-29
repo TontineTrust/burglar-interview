@@ -21,10 +21,10 @@ room with the lowest chance of triggering the alarm, and steal the diamond.
 
 Given parameters:
 - The room is of size `M` x `N`, with `M` and `N` given parameters.
-- The diamond is located at the center of the room, `(M/2, N/2)`.
+- The diamond is located somewhere in the room (D_m, D_n).
 - The entrance is at the bottom right corner, `(M, 0)`, and the exit at the top
   left corner, `(0, N)`.
-- You have a list of sensor locations `(m_i, n_i)`.
+- You have a list of sensor locations `(S_i, S_i)`.
 
 All of this should be put in a Haskell repository on GitHub, which you invite me
 to, that uses cabal, nix, stack or whichever tools you like. Tests are not
