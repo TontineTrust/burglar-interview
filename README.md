@@ -9,15 +9,15 @@ are each built to trigger the alarm when you come too close to them, with
 probability
 
 ```
-P = exp[-l^2 / L^2]
+P = exp[-l^2 / c^2]
 ```
 
-where `l` is the distance between you and the sensor, and `L` is some length
+where `l` is the distance between you and the sensor, and `c` is some length
 characteristic of the type of sensor.
 
 Now, given that you know exactly where each sensor is, your task is to prepare
-for the robbery by calculating exactly which path you should take to get through
-the room with the lowest chance of triggering the alarm, and steal the diamond.
+for the robbery by calculating which path you should take to get through the
+room with the lowest chance of triggering the alarm, and steal the diamond.
 
 Given parameters:
 - The room is of size `M` x `N`, with `M` and `N` given parameters.
@@ -26,11 +26,10 @@ Given parameters:
   left corner, `(0, N)`.
 - You have a list of sensor locations `(m_i, n_i)`.
 
-Your algorithm should give the probability of being caught taking the ideal path
-from the entrance via the diamond to the exit. All of this should be put in a
-Haskell repository on GitHub, which you invite me to, that uses cabal, nix,
-stack or whichever tools you like. Tests are not necessary, but a readme file
-is, where you describe the formulae that you are using in your code, come from.
+All of this should be put in a Haskell repository on GitHub, which you invite me
+to, that uses cabal, nix, stack or whichever tools you like. Tests are not
+necessary, but a readme file is, where you describe the formulae that you are
+using in your code, come from.
 
 The goal of this exercise, is to test
 - your ability to solve problemms
